@@ -10,5 +10,15 @@ http.createServer(function  (request, response) {
 	response.end('Hola World\n');
 }).listen(3000);
 
+/**
+    Comentario que aparecería solamente en stage
+*/
+
+/// códifo de prueva
+function ejecutar(algunaFuncion, valor) {
+algunaFuncion(valor);
+}
+ejecutar(function(palabra){ console.log(palabra) }, "Hola");
+
 //Imprimir el mensaje de ejecución en consola 
 console.log('Servidor corriendo en localhost:3000');
